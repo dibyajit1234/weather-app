@@ -35,7 +35,7 @@ find.addEventListener("keypress",(e)=>{
     if(e.key==='Enter'){
         getapi(find.value).then((a)=>{
             place.innerText=a.location.name;
-            image.src="https:"+a.current.condition.icon;
+            image.src=+a.current.condition.icon;
             temp.innerText=a.current.temp_c+"°";
             state.innerText=a.current.condition.text;
             humi.innerText="Humidity : "+a.current.humidity;
