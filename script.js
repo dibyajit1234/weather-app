@@ -1,11 +1,6 @@
 const url="http://api.weatherapi.com/v1/current.json?key=fc71dce7dd2540b2af7150945241506&q=India&aqi=no";
 
-async function geturl(){
-    let man=await fetch(`http://api.weatherapi.com/v1/current.json?key=fc71dce7dd2540b2af7150945241506&q=India&aqi=no`);
-    let data=await man.json();
-    console.log(data);
-}
-geturl();
+
 
 async function getapi(a){
     let man=await fetch(`http://api.weatherapi.com/v1/current.json?key=fc71dce7dd2540b2af7150945241506&q=${a}&aqi=no`);
