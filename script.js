@@ -1,7 +1,5 @@
 const url="http://api.weatherapi.com/v1/current.json?key=fc71dce7dd2540b2af7150945241506&q=India&aqi=no";
 
-
-
 async function getapi(a){
     let man=await fetch(`http://api.weatherapi.com/v1/current.json?key=fc71dce7dd2540b2af7150945241506&q=${a}&aqi=no`);
     let data=await man.json();
@@ -43,8 +41,6 @@ find.addEventListener("keypress",(e)=>{
             visi.innerText=a.current.vis_km+"km";
             dew.innerText=a.current.dewpoint_c+"°c";
             wind_direction.innerText=a.current.wind_dir;
-
-            console.log(a);
         })
     };
 });
